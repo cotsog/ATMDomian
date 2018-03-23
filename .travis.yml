@@ -1,8 +1,8 @@
 language: java
 jdk: oraclejdk8
 before_install:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 addons:
   sonarqube:
     organization: steinko-github
@@ -19,5 +19,5 @@ cache:
 deploy:
   provider: heroku
   api_key:
-    secure: "YOUR ENCRYPTED API KEY"
+    secure: JaoQ0acYhRfRydSTu5sht8pgRizJBo57IliDGtfVzkjSCMaYNSA2KqTiEVIlGPA/WgxYgv9GkFywGTUbOxeSSc02ldw9cuO5YJoTJeC5P/TVEE/NbgrY8pgMxmPBBvd3v0L0CadWO3MF/05DaQlqK8YFQ/BZwUYXxsciE2gh43KYQ7yUVQTyfVhERZrv1hh/y0Fdg91soxWnoZL7fZa64VXcnhrxM6TDhBWFh6oaXNCWEDpMXTm/c4fEpzNZ2mGf9tVmg6HTL5gqdScf9hhiK0pbqIG68qSSZx2gJFZCfN+7g6eIxWdPaH6dmJzmwMj3QqDG6Q8Pp2pG/GaFL23aqvlX4QxUP9FXRBdybkq5vrBnTaRRoQzd9Xmn7gzPauW1Wyll8lCn7zCQ7RLMfPNezghld4ZMYfutlQ+3TNXoPLfcoUZ7Tqqmjtg3/BuakjqiJx8qLFHiUQ7Pm8dL6h3QocTwRI8RLQJhQEh1ngmqvC9VDRIC58i1lXJsY71DIlwgEOErcm23L6arjhJwRulnulrODAMqfbAjcH5ZaBPkO8J48Z+hwCv29LfKy3N08xSemyfam85oBlrqD2IFTWzsXMJXECgOoj87Jkv7TG8h2li8qka7R7jILqurdXK1+FvWmoZRE1Kie5yQDFsPz+VYbmqoye4VlShliKOMwuOTtv4=
   app: atmdomain
