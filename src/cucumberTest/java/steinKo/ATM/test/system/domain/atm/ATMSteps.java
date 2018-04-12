@@ -2,8 +2,11 @@ package steinKo.ATM.test.system.domain.atm;
 
  
 
-import static org.junit.Assert.assertEquals;
 
+
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

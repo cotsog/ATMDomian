@@ -11,11 +11,9 @@ addons:
     branches:
     - master
 script:
-- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -DheadLess=true sonar:sonar
-cache:
-  directories:
-  - "$HOME/.m2/repository"
-  - "$HOME/.sonar/cache"
+- gradle assemble
+- gradle check
+
 deploy:
   provider: heroku
   api_key:

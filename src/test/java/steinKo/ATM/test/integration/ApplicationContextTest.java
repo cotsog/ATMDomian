@@ -4,6 +4,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,7 @@ import steinKo.ATM.Domain;
 import steinKo.ATM.repository.BankRepository;
 import steinKo.ATM.service.ATMS;
 import steinKo.ATM.service.ATMService;
-import steinKo.ATM.test.integration.framework.AbstractIntegration;
+import steinKo.ATM.test.integration.AbstractIntegration;
 
 
 public class ApplicationContextTest extends AbstractIntegration{
@@ -30,7 +31,7 @@ public class ApplicationContextTest extends AbstractIntegration{
 	}
 	
 	
-	
+	@Disabled
 	@Test
 	public void shouldDisplayeBeans()
 	{
@@ -46,12 +47,14 @@ public class ApplicationContextTest extends AbstractIntegration{
 		 Object bean =applicationContext.getBean("dataSource" );
 		 logger.info(bean.toString());
 	}
-	
+	@Disabled
 	@Test
 	public void shouldContainATMServicImplBean()
 	{   
 		ATMService atmService = applicationContext.getBean(ATMService.class);
 		assertNotNull(atmService);
+		logger.info(atmService.display());
+		logger.info(ATMS.States.startMessage);
 		assertEquals(atmService.display(),ATMS.States.startMessage);
 		
 	}

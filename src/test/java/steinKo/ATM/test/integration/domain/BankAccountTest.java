@@ -5,13 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Optional;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 import steinKo.ATM.domain.BankAccount;
 import steinKo.ATM.repository.BankAccountRepository;
-import steinKo.ATM.test.integration.framework.AbstractIntegration;
+import steinKo.ATM.test.integration.AbstractIntegration;
 
 public class BankAccountTest  extends AbstractIntegration{
 	
@@ -100,6 +101,7 @@ public class BankAccountTest  extends AbstractIntegration{
 		assertEquals(foundAccount.saldo(),200);
 	}
 	
+	@Disabled
 	@Test
 	public void shouldFindOldSaldo() {
 		repository.deleteAll();

@@ -14,7 +14,7 @@ import steinKo.ATM.controller.ATMServiceController;
 import steinKo.ATM.domain.Bank;
 import steinKo.ATM.repository.BankRepository;
 import steinKo.ATM.service.ATMS;
-import steinKo.ATM.test.integration.framework.AbstractIntegration;
+import steinKo.ATM.test.integration.AbstractIntegration;
 
 
 

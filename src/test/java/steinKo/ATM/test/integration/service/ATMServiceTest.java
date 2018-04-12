@@ -2,6 +2,7 @@ package steinKo.ATM.test.integration.service;
 
 import static org.junit.Assert.*;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,28 +14,20 @@ import steinKo.ATM.domain.Customer;
 import steinKo.ATM.repository.BankRepository;
 import steinKo.ATM.service.ATMS;
 import steinKo.ATM.service.ATMService;
-import steinKo.ATM.test.integration.framework.AbstractIntegration;
-
-
-
-
+import steinKo.ATM.test.integration.AbstractIntegration;
 
 public class ATMServiceTest extends AbstractIntegration{
 	
 	private final static Logger logger = LoggerFactory.getLogger(ATMServiceTest.class);
    
-    
-	@Autowired
+	//@Autowired
 	private ATMService atmService;
 	
-	@Autowired
+	//@Autowired
 	private BankRepository  repository;
 	
 	
-	
-  
-	
-	
+	@Disabled
 	@Test
 	public void souldWitdrawMonyFromSavingAccount() {
 		Bank bank =  Bank.create();
@@ -57,9 +50,6 @@ public class ATMServiceTest extends AbstractIntegration{
 		assertEquals(atmService.display(),"Balance= 1000 kr\nA=Deposit\nB=Withdrawal\nC=Cancel");
 		atmService.buttomAPushed("200");
 		assertEquals(atmService.display(),ATMS.States.autorizedMessag);
-		
-		
-		
 		
 	}
 

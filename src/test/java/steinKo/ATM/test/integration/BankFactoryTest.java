@@ -25,7 +25,7 @@ import steinKo.ATM.BankFactory;
 import steinKo.ATM.Domain;
 
 import steinKo.ATM.repository.BankRepository;
-import steinKo.ATM.test.integration.framework.AbstractIntegration;
+import steinKo.ATM.test.integration.AbstractIntegration;
 
 
 

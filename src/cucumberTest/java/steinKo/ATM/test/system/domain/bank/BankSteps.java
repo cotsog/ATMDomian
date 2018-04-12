@@ -10,7 +10,7 @@ import steinKo.ATM.domain.Customer;
 import steinKo.ATM.repository.BankRepository;
 
 
-import static org.junit.Assert.assertNull;
+
 
 import java.util.List;
 
@@ -20,9 +20,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Scope;
 
-
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 
 

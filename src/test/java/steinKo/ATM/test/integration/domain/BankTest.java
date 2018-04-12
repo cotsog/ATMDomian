@@ -19,7 +19,7 @@ import steinKo.ATM.domain.BankAccount;
 import steinKo.ATM.domain.Customer;
 import steinKo.ATM.repository.BankRepository;
 import steinKo.ATM.repository.CustomerRepository;
-import steinKo.ATM.test.integration.framework.AbstractIntegration;
+import steinKo.ATM.test.integration.AbstractIntegration;
 
 
 
