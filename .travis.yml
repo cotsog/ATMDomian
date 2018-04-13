@@ -11,8 +11,8 @@ addons:
     branches:
     - master
 script:
-- gradle assemble --info
-- gradle check --info
+- gradle assemble --stacktrace
+- gradle check --stracktrace
 
 deploy:
   provider: heroku
