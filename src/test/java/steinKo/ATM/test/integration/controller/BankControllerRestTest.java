@@ -1,6 +1,10 @@
 package steinKo.ATM.test.integration.controller;
 
 
+
+
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
@@ -14,10 +18,6 @@ import io.restassured.RestAssured;
 import io.restassured.config.RedirectConfig;
 
 
-
-
-import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
 
 public class BankControllerRestTest {
