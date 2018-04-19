@@ -3,6 +3,10 @@ jdk: oraclejdk9
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
+- wget https://services.gradle.org/distributions/gradle-4.7-bin.zip
+- unzip gradle-4.7-bin.zip
+- export GRADLE_HOME=$PWD/gradle-4.7
+- export PATH=$GRADLE_HOME/bin:$PATH
 addons:
   sonarqube:
     organization: steinko-github
